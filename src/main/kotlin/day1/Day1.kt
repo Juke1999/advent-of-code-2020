@@ -2,6 +2,7 @@ package day1
 
 class Day1 {
   fun day1pt1(list: IntArray) {
+    val startTime = System.nanoTime()
     var found = false;
 
     list.indices.forEach { i ->
@@ -15,9 +16,11 @@ class Day1 {
         }
       }
     }
+    println("Execution time: ${(System.nanoTime() - startTime) * 1e-9}s")
   }
 
   fun day1pt2(list: IntArray) {
+    val startTime = System.nanoTime()
     var found = false
 
     list.indices.forEach { i ->
@@ -33,6 +36,7 @@ class Day1 {
         }
       }
     }
+    println("Execution time: ${(System.nanoTime() - startTime) * 1e-9}s")
   }
 
 }
